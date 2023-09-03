@@ -143,7 +143,7 @@ static void snake_game_render_callback(Canvas* const canvas, void* ctx) {
             canvas_draw_str_aligned(canvas, 65, 31, AlignCenter, AlignBottom, "Game Over");
         }
         if(snake_state->state == GameStatePause) {
-            canvas_draw_str_aligned(canvas, 65, 31, AlignCenter, AlignBottom, "Pause");
+            canvas_draw_str_aligned(canvas, 65, 31, AlignCenter, AlignBottom, "Game Paused");
         }
 
         canvas_set_font(canvas, FontSecondary);
@@ -157,9 +157,9 @@ static void snake_game_render_callback(Canvas* const canvas, void* ctx) {
         canvas_draw_box(canvas, 28, 54, 73, 9);
         canvas_set_color(canvas, ColorBlack);
         canvas_draw_str_aligned(
-            canvas, 65, 10, AlignCenter, AlignBottom, "Hold        to Exit App");
+            canvas, 65, 10, AlignCenter, AlignBottom, "Hold        to Exit Game");
         snprintf(
-            buffer, sizeof(buffer), "Complete: %-5.1f%%", (double)((snake_state->len - 7U) / 4.58));
+            buffer, sizeof(buffer), "Completeness: %-5.1f%%", (double)((snake_state->len - 7U) / 4.58));
         canvas_draw_str_aligned(canvas, 65, 62, AlignCenter, AlignBottom, buffer);
         {
             canvas_draw_dot(canvas, x_back_symbol + 0, y_back_symbol);
