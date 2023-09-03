@@ -109,13 +109,12 @@ Note: This repo is always updated with OFW & Unleashed. No need to mention all t
 - Xtreme App
 - Asset Packs
 - More UI options
-- Bad-Keyboard App
 - A new battery display-type
 - Scrolling view for long file names in browser
 - Advanced and optimized level system. Read more above
 - Folder handling for empty ones (Now indicate they are empty)
 
-- Custom subghz presets
+- Custom Sub-Ghz presets
 - Multiple NFC protocols
 - Multiple Sub-Ghz protocols | Merged from Unleashed, thanks @xMasterX
 - Subghz and IR signal replication via gpio | Credits to @xMasterX
@@ -126,28 +125,30 @@ Note: This repo is always updated with OFW & Unleashed. No need to mention all t
 [Updated]
 
 - All Assets
-
 - Tons of apps
-- File browser
-- Massive compiler re-do
-- About 4k files to speed things up a lot
 - Applications to now use the new Locale setting
+```
+```txt
+[Modified]
+
+- Leveling system
+- Mood system
+- File browser
+- Compiler
+- About 4k files to speed things up a lot
+- BadUSB to become BadKB
 ```
 ```txt
 [Fixed]
 
 - Keyboard issues on first char
 - Passport crash on high level
-- SFW / Dummy_mode getting you XP
-- Leveling system
-- Mood system
 ```
 ```txt
-[REMOVED]
+[Removed]
 
 - Unused Dummy Mode
-- Broken apps (bad apple, chess, etc.)
-- Tons of unused code from FAPs and system calls
+- Tons of unused code from apps and system calls
 ```
 
 ----
@@ -155,7 +156,7 @@ Note: This repo is always updated with OFW & Unleashed. No need to mention all t
 <h2 align="center">Install:</h2>
 <br>
 
-There are 3 methods to install Xtreme, we recommend you use the **Web Updater**, but choose whichever one you prefer:
+There are 2 methods to install Xtreme. Although the **Web Updater** is better, the best one *available* is the **qFlipper Package**:
 
 <br>
 

@@ -22,7 +22,7 @@ void xtreme_app_scene_start_on_enter(void* context) {
     item = variable_item_list_add(var_item_list, "Protocols", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
 
-    item = variable_item_list_add(var_item_list, "Misc", 0, NULL, app);
+    item = variable_item_list_add(var_item_list, "Miscellaneous", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
 
     variable_item_list_set_header(var_item_list, furi_string_get_cstr(app->version_tag));

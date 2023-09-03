@@ -31,7 +31,7 @@ void power_settings_scene_start_on_enter(void* context) {
         app);
     submenu_add_item(
         submenu,
-        "Power OFF",
+        "Power Off",
         PowerSettingsSubmenuIndexOff,
         power_settings_scene_start_submenu_callback,
         app);

@@ -54,7 +54,7 @@ void xtreme_app_scene_interface_filebrowser_on_enter(void* context) {
 
     item = variable_item_list_add(
         var_item_list,
-        "Folders Above Files",
+        "Show Folders Above Files",
         2,
         xtreme_app_scene_interface_filebrowser_sort_dirs_first_changed,
         app);
@@ -72,7 +72,7 @@ void xtreme_app_scene_interface_filebrowser_on_enter(void* context) {
 
     item = variable_item_list_add(
         var_item_list,
-        "Show Internal Tab",
+        "Show Internal Storage",
         2,
         xtreme_app_scene_interface_filebrowser_show_internal_tab_changed,
         app);

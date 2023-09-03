@@ -21,13 +21,13 @@ void xtreme_app_scene_interface_on_enter(void* context) {
     item = variable_item_list_add(var_item_list, "Graphics", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
 
-    item = variable_item_list_add(var_item_list, "Mainmenu", 0, NULL, app);
+    item = variable_item_list_add(var_item_list, "Main Menu", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
 
-    item = variable_item_list_add(var_item_list, "Lockscreen", 0, NULL, app);
+    item = variable_item_list_add(var_item_list, "Lock Screen", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
 
-    item = variable_item_list_add(var_item_list, "Statusbar", 0, NULL, app);
+    item = variable_item_list_add(var_item_list, "Status Bar", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
 
     item = variable_item_list_add(var_item_list, "File Browser", 0, NULL, app);
