@@ -8,6 +8,6 @@ GUI h
 DELAY 420
 GUI SPACE
 DELAY 420
-STRING https://github.com/Flipper-XFW/Xtreme-Firmware
+STRING https://github.com/FeyXieXzf/Xtreme-Firmware
 DELAY 69
 ENTER

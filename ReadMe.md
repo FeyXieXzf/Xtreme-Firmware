@@ -5,7 +5,7 @@
 </p>
 
 <h2 align="center">
-  <a href="https://flipper-xtre.me">Website</a> | <a href="https://github.com/Flipper-XFW/Xtreme-Firmware#What-makes-it-special">Intro</a> | <a href="https://github.com/Flipper-XFW/Xtreme-Firmware#Install">Install</a> | <a href="https://github.com/Flipper-XFW/Xtreme-Firmware#list-of-changes">Changelog</a> | <a href="https://github.com/Flipper-XFW/Xtreme-Firmware/wiki">Wiki</a> | <a href="https://discord.gg/flipper-xtreme">Discord</a> | <a href="https://github.com/Flipper-XFW/Xtreme-Firmware#%EF%B8%8F-support">Donate</a>
+  <a href="https://flipper-xtre.me">Website</a> | <a href="https://github.com/FeyXieXzf/Xtreme-Firmware#What-makes-it-special">Intro</a> | <a href="https://github.com/FeyXieXzf/Xtreme-Firmware#Install">Install</a> | <a href="https://github.com/FeyXieXzf/Xtreme-Firmware#list-of-changes">Changelog</a> | <a href="https://github.com/FeyXieXzf/Xtreme-Firmware/wiki">Wiki</a> | <a href="https://discord.gg/flipper-xtreme">Discord</a> | <a href="https://github.com/FeyXieXzf/Xtreme-Firmware#%EF%B8%8F-support">Donate</a>
 </h2>
 
 This firmware is a complete overhaul of the [Official Firmware](https://github.com/flipperdevices/flipperzero-firmware), and also features lots of awesome code-bits from [Unleashed](https://github.com/DarkFlippers/unleashed-firmware).
@@ -22,9 +22,9 @@ The goal of this Firmware is to regularly bring out amazing updates based on wha
 
 - <h4>Stable: Many hours have been spent rewriting core parts of the Flippers firmware as well as some of its apps to ensure stability. A task that was long needed on all Firmware, so we tackled it right away.</h4>
 
-- <h4>Customizable: Dont like the Animations, want to turn on/off the Home screen icons (battery, SD card etc), change the flippers name or anything like that? You absolutely can. No need to mess with code or deal with weird manifest files. Its all done with an App.</h4>
+- <h4>Customizable: Dont like the firmware's own artworks and want the dolphins back? Not a chance. "Fork it and change it yourself."</h4>
 <br><br>
-Note, the below mentioned changes are only a few things we did. For a full list click [here](https://github.com/Flipper-XFW/Xtreme-Firmware/wiki/Customization)
+Note, the below mentioned changes are only a few things we did. For a full list click [here](https://github.com/FeyXieXzf/Xtreme-Firmware/wiki/Customization)
 
 -----
 <br>
@@ -44,7 +44,7 @@ Also, perhaps a bigger height, with set width (yes distrotion issues ik) so it f
 
 - <ins><b>Interface:</b></ins> Customize every bit of your Flipper, from the desktop animations, to the main menu apps, lockscreen style etc.
 
-- <ins><b>Protocols:</b></ins> Here you can toggle between USB & Bluetooth mode for <a href="https://github.com/Flipper-XFW/Xtreme-Firmware/wiki/Generic-Guides#badbt--kb">BadKB</a>, and manage custom Subghz frequencies.
+- <ins><b>Protocols:</b></ins> Here you can toggle between USB & Bluetooth mode for <a href="https://github.com/FeyXieXzf/Xtreme-Firmware/wiki/Generic-Guides#badbt--kb">BadKB</a>, and manage custom Subghz frequencies.
 
 - <ins><b>Misc:</b></ins> All the other options that don't fit elsewhere. Change your Flipper's name, xp level, and configure the <a href="https://github.com/Z3BRO/Flipper-Zero-RGB-Backlight">RGB backlight</a>.
 
@@ -60,7 +60,7 @@ Also, perhaps a bigger height, with set width (yes distrotion issues ik) so it f
 We created our own, new & improved Animation / Asset system, that we can finally reveal. It lets you to create and cycle through your own `Asset Packs` with only a few button presses, allowing you to easily load custom Animations and Icons like never before.
 
 <img src="https://user-images.githubusercontent.com/55334727/214010675-9eddb8f5-1dd6-4cf4-a0ee-e37af8b6c933.PNG" align="left" width="200px"/>
-You can easily create your own pack, or find some user made ones in the discord channel. Check <a href="https://github.com/Flipper-XFW/Xtreme-Firmware/wiki/Asset-Packs">here</a> for a tutorial on creating your own. Essentially, we got our own <code>Anims</code> & <code>Icons</code> folders, inside each <code>Asset Pack</code>.
+You can easily create your own pack, or find some user made ones in the discord channel. Check <a href="https://github.com/FeyXieXzf/Xtreme-Firmware/wiki/Asset-Packs">here</a> for a tutorial on creating your own. Essentially, we got our own <code>Anims</code> & <code>Icons</code> folders, inside each <code>Asset Pack</code>.
 
 <br clear="left"/>
 
@@ -159,22 +159,15 @@ There are 3 methods to install Xtreme, we recommend you use the **Web Updater**,
 
 <br>
 
-> <details><summary><code>Web Updater (Chrome)</code></summary><ul>
->   <li>Open the <a href="https://github.com/Flipper-XFW/Xtreme-Firmware/releases/latest">latest release page</a> and click on the <code>Web Updater</code> link</li>
->   <li>Make sure qFlipper is closed</li>
->   <li>Click <code>Connect</code> and select your Flipper from the list</li>
->   <li>Click <code>Flash</code> and wait for the update to complete</li>
-> </ul></details>
-
 > <details><summary><code>qFlipper Package (.tgz)</code></summary><ul>
->   <li>Download the qFlipper package (.tgz) from the <a href="https://github.com/Flipper-XFW/Xtreme-Firmware/releases/latest">latest release page</a></li>
+>   <li>Download the qFlipper package (.tgz) from the <a href="https://github.com/FeyXieXzf/Xtreme-Firmware/releases/latest">latest release page</a></li>
 >   <li>Open <a href="https://flipperzero.one/update">qFlipper</a> and connect your Flipper</li>
 >   <li>Click <code>Install from file</code></li>
 >   <li>Select the .tgz you downloaded and wait for the update to complete</li>
 > </ul></details>
 
 > <details><summary><code>Zipped Archive (.zip)</code></summary><ul>
->   <li>Download the zipped archive (.zip) from the <a href="https://github.com/Flipper-XFW/Xtreme-Firmware/releases/latest">latest release page</a></li>
+>   <li>Download the zipped archive (.zip) from the <a href="https://github.com/FeyXieXzf/Xtreme-Firmware/releases/latest">latest release page</a></li>
 >   <li>Extract the archive. This is now your new Firmware folder</li>
 >   <li>Open <a href="https://flipperzero.one/update">qFlipper</a>, head to <code>SD/Update</code> and simply move the firmware folder there</li>
 >   <li>On the Flipper, hit the <code>Arrow Down</code> button, this will get you to the file menu. In there simply search for your updates folder</li>
@@ -192,7 +185,7 @@ There are 3 methods to install Xtreme, we recommend you use the **Web Updater**,
 
 ```bash
 To download the needed tools:
-$ git clone --recursive --jobs 8 https://github.com/Flipper-XFW/Xtreme-Firmware.git
+$ git clone --recursive --jobs 8 https://github.com/FeyXieXzf/Xtreme-Firmware.git
 $ cd Xtreme-Firmware/
 
 To flash directly to the Flipper (Needs to be connected via USB, qFlipper closed)
@@ -208,12 +201,12 @@ $ ./fbt launch APPSRC=some_appid
 ----
 <h2 align="center">Stargazers over time</h2>
 
-[![Stargazers over time](https://starchart.cc/Flipper-XFW/Xtreme-Firmware.svg)](https://starchart.cc/Flipper-XFW/Xtreme-Firmware)
+[![Stargazers over time](https://starchart.cc/FeyXieXzf/Xtreme-Firmware.svg)](https://starchart.cc/FeyXieXzf/Xtreme-Firmware)
 
 ----
 <h2 align="center">Contributors</h2>
 
-[![Contributors](https://user-images.githubusercontent.com/49810075/228231815-8f0a267d-ac1a-494c-9cd0-1cd57568fc79.svg)](https://github.com/Flipper-XFW/Xtreme-Firmware/graphs/contributors)
+[![Contributors](https://user-images.githubusercontent.com/49810075/228231815-8f0a267d-ac1a-494c-9cd0-1cd57568fc79.svg)](https://github.com/FeyXieXzf/Xtreme-Firmware/graphs/contributors)
 
 
 ## ❤️ Support
