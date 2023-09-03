@@ -154,7 +154,7 @@ void xtreme_app_scene_interface_lockscreen_on_enter(void* context) {
 
     item = variable_item_list_add(
         var_item_list,
-        "Show Statusbar",
+        "Show Status Bar",
         2,
         xtreme_app_scene_interface_lockscreen_lockscreen_statusbar_changed,
         app);
@@ -173,7 +173,7 @@ void xtreme_app_scene_interface_lockscreen_on_enter(void* context) {
 
     item = variable_item_list_add(
         var_item_list,
-        "Transparent (see animation)",
+        "Transparent",
         2,
         xtreme_app_scene_interface_lockscreen_lockscreen_transparent_changed,
         app);

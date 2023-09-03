@@ -57,11 +57,11 @@ void desktop_settings_scene_start_on_enter(void* context) {
     VariableItem* item;
     uint8_t value_index;
 
-    variable_item_list_add(variable_item_list, "Keybinds Setup", 1, NULL, NULL);
+    variable_item_list_add(variable_item_list, "Configure Keybinds", 1, NULL, NULL);
 
-    variable_item_list_add(variable_item_list, "Reset Keybinds to Default", 1, NULL, NULL);
+    variable_item_list_add(variable_item_list, "Reset Keybinds", 1, NULL, NULL);
 
-    variable_item_list_add(variable_item_list, "PIN Setup", 1, NULL, NULL);
+    variable_item_list_add(variable_item_list, "Configure PIN", 1, NULL, NULL);
 
     item = variable_item_list_add(
         variable_item_list,
