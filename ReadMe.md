@@ -1,7 +1,7 @@
 <h1 align="center">XFW - <code>Xtreme Firmware</code> for the Flipper Zero</h1>
 
 <p align="center">
-  <img src="https://github.com/Flipper-XFW/Xtreme-Firmware/assets/55334727/767a3e1b-a96c-43c8-b58f-a49a533b3bb4">
+  <img src="https://github.com/FeyXieXzf/Xtreme-Firmware/.github/readme_assets/xtreme-firmware-lol.png">
 </p>
 
 <h2 align="center">
