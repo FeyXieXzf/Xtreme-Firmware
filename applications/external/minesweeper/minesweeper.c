@@ -205,7 +205,7 @@ static bool game_lost(Minesweeper* minesweeper_state) {
 
     dialog_message_set_header(message, "Game Over", 64, 3, AlignCenter, AlignTop);
     dialog_message_set_text(message, "You hit a mine!", 64, 32, AlignCenter, AlignCenter);
-    dialog_message_set_buttons(message, NULL, "Play again", NULL);
+    dialog_message_set_buttons(message, NULL, "Try Again", NULL);
 
     // Set cursor to initial position
     minesweeper_state->cursor_x = 0;
@@ -231,12 +231,12 @@ static bool game_won(Minesweeper* minesweeper_state) {
     seconds = seconds % 60;
 
     DialogMessage* message = dialog_message_alloc();
-    const char* header_text = "Game won!";
-    furi_string_cat_printf(tempStr, "Minefield cleared in %01d:%02d", minutes, seconds);
+    const char* header_text = "You won!";
+    furi_string_cat_printf(tempStr, "Minefield cleared in %01d:%02d!", minutes, seconds);
     dialog_message_set_header(message, header_text, 64, 3, AlignCenter, AlignTop);
     dialog_message_set_text(
         message, furi_string_get_cstr(tempStr), 64, 32, AlignCenter, AlignCenter);
-    dialog_message_set_buttons(message, NULL, "Play again", NULL);
+    dialog_message_set_buttons(message, NULL, "Play Again", NULL);
 
     // Call dolphin deed when we win the game
     dolphin_deed(DolphinDeedPluginGameWin);
@@ -376,7 +376,7 @@ int32_t minesweeper_app(void* p) {
     dialog_message_set_header(message, "Minesweeper", 64, 3, AlignCenter, AlignTop);
     dialog_message_set_text(
         message,
-        "Hold OK pressed to toggle flags.\ngithub.com/panki27",
+        "Controls:\nPress OK to clear blocks.\nHold OK to toggle flags.\nAuthor:\ngithub.com/panki27",
         64,
         32,
         AlignCenter,

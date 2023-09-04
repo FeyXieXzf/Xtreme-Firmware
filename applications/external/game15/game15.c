@@ -46,7 +46,7 @@ static moving_cell_t moving_cell;
 static uint8_t loaded_saving_ticks;
 static uint8_t popup_menu_selected_item;
 
-static const char* popup_menu_strings[] = {"Continue", "Reset"};
+static const char* popup_menu_strings[] = {"Resume", "New"};
 
 static uint8_t keys[KEY_STACK_SIZE];
 static uint8_t key_stack_head = 0;

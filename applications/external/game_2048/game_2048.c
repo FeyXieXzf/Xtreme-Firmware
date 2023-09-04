@@ -48,7 +48,7 @@ typedef struct {
 } MoveResult;
 
 #define MENU_ITEMS_COUNT 2
-static const char* popup_menu_strings[] = {"Resume", "New Game"};
+static const char* popup_menu_strings[] = {"Resume Game", "New Game"};
 
 static void input_callback(InputEvent* input_event, void* ctx) {
     furi_assert(ctx);

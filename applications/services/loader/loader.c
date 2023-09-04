@@ -458,7 +458,7 @@ static LoaderStatus loader_start_external_app(
             snprintf(
                 buf,
                 66,
-                "FAP: %i != FW: %i\nThis app might not work\nContinue anyways?",
+                "FAP: %i != FW: %i\nThis app might not work!\nContinue anyways?",
                 manifest->base.api_version.major,
                 firmware_api_interface->api_version_major);
 

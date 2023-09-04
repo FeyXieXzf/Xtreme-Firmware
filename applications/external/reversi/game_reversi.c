@@ -24,7 +24,7 @@ typedef struct {
 } AppState;
 
 #define MENU_ITEMS_COUNT 2
-static const char* popup_menu_strings[] = {"Resume", "New Game"};
+static const char* popup_menu_strings[] = {"Resume Game", "New Game"};
 
 static void draw_menu(Canvas* const canvas, const AppState* app_state);
 static void gray_canvas(Canvas* const canvas);
