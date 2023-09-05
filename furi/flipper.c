@@ -24,7 +24,7 @@ static void flipper_print_version(const char* target, const Version* version) {
         FURI_LOG_I(
             TAG,
             "\r\n\t%s version:\t%s\r\n"
-            "\tBuild date:\t\t%s\r\n"
+            "\tBuild Date:\t\t%s\r\n"
             "\tGit Commit:\t\t%s (%s)%s\r\n"
             "\tGit Branch:\t\t%s",
             target,
@@ -101,14 +101,14 @@ static void flipper_boot_status(Canvas* canvas, const char* text) {
     canvas_reset(canvas);
     canvas_draw_str_aligned(canvas, 64, 40, AlignCenter, AlignCenter, text);
     canvas_set_font(canvas, FontPrimary);
-    canvas_draw_str_aligned(canvas, 64, 24, AlignCenter, AlignCenter, "Xtreme is Booting");
+    canvas_draw_str_aligned(canvas, 64, 24, AlignCenter, AlignCenter, "Flipper Zero is Booting");
     canvas_commit(canvas);
 }
 
 void flipper_init() {
     furi_hal_light_sequence("rgb WB");
     flipper_print_version("Firmware", furi_hal_version_get_firmware_version());
-    FURI_LOG_I(TAG, "Boot mode %d", furi_hal_rtc_get_boot_mode());
+    FURI_LOG_I(TAG, "Boot Mode %d", furi_hal_rtc_get_boot_mode());
     Canvas* canvas = canvas_init();
 
     // Start storage service first, thanks OFW :/
@@ -122,13 +122,13 @@ void flipper_init() {
         flipper_migrate_files();
         flipper_boot_status(canvas, "Starting Namespoof");
         NAMESPOOF_INIT();
-        flipper_boot_status(canvas, "Loading Xtreme Settings");
+        flipper_boot_status(canvas, "Loading System Settings");
         XTREME_SETTINGS_LOAD();
         furi_hal_light_sequence("rgb RB");
-        flipper_boot_status(canvas, "Loading Xtreme Assets");
+        flipper_boot_status(canvas, "Loading System Assets");
         XTREME_ASSETS_LOAD();
     } else {
-        FURI_LOG_I(TAG, "Special boot, skipping optional components");
+        FURI_LOG_I(TAG, "Special boot - skipping optional components");
     }
 
     // Everything else
