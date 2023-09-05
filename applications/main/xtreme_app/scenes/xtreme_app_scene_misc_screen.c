@@ -28,7 +28,7 @@ static void xtreme_app_scene_misc_screen_dark_mode_changed(VariableItem* item) {
 
 static void xtreme_app_scene_misc_screen_hand_orient_changed(VariableItem* item) {
     bool value = variable_item_get_current_value_index(item);
-    variable_item_set_current_value_text(item, value ? "ON" : "OFF");
+    variable_item_set_current_value_text(item, value ? "Lefty" : "Righty");
     if(value) {
         furi_hal_rtc_set_flag(FuriHalRtcFlagHandOrient);
     } else {
@@ -162,7 +162,7 @@ void xtreme_app_scene_misc_screen_on_enter(void* context) {
     variable_item_set_current_value_text(item, xtreme_settings->dark_mode ? "ON" : "OFF");
 
     item = variable_item_list_add(
-        var_item_list, "Hand Orientation", 2, xtreme_app_scene_misc_screen_hand_orient_changed, app);
+        var_item_list, "Hand Orient", 2, xtreme_app_scene_misc_screen_hand_orient_changed, app);
     bool value = furi_hal_rtc_is_flag_set(FuriHalRtcFlagHandOrient);
     variable_item_set_current_value_index(item, value);
     variable_item_set_current_value_text(item, value ? "Lefty" : "Righty");
