@@ -51,7 +51,7 @@ void xtreme_app_scene_misc_on_enter(void* context) {
     variable_item_set_current_value_index(item, value_index - 1);
     variable_item_set_current_value_text(item, cap_str);
 
-    variable_item_list_add(var_item_list, "Show Xtreme Intro", 0, NULL, app);
+    variable_item_list_add(var_item_list, "Display Intro", 0, NULL, app);
 
     variable_item_list_set_enter_callback(
         var_item_list, xtreme_app_scene_misc_var_item_list_callback, app);
