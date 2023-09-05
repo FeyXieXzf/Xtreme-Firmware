@@ -2,7 +2,7 @@
 
 enum VarItemListIndex {
     VarItemListIndexDarkMode,
-    VarItemListIndexLeftHanded,
+    VarItemListIndexHandOrientation,
     VarItemListIndexRgbBacklight,
     VarItemListIndexLcdColor0,
     VarItemListIndexLcdColor1,
@@ -100,20 +100,20 @@ static void xtreme_app_scene_misc_screen_rainbow_speed_changed(VariableItem* ite
 }
 
 const char* const rainbow_interval_names[] = {
-    "0.1 S",
-    "0.2 S",
-    "0.25 S",
-    "0.5 S",
-    "0.75 S",
-    "1 S",
-    "1.25 S",
-    "1.5 S",
-    "1.75 S",
-    "2 S",
-    "2.5 S",
-    "3 S",
-    "4 S",
-    "5 S",
+    "0.1s",
+    "0.2s",
+    "0.25s",
+    "0.5s",
+    "0.75s",
+    "1s",
+    "1.25s",
+    "1.5s",
+    "1.75s",
+    "2s",
+    "2.5s",
+    "3s",
+    "4s",
+    "5s",
 };
 const uint32_t rainbow_interval_values[COUNT_OF(rainbow_interval_names)] = {
     100,
@@ -162,10 +162,10 @@ void xtreme_app_scene_misc_screen_on_enter(void* context) {
     variable_item_set_current_value_text(item, xtreme_settings->dark_mode ? "ON" : "OFF");
 
     item = variable_item_list_add(
-        var_item_list, "Left Handed", 2, xtreme_app_scene_misc_screen_hand_orient_changed, app);
+        var_item_list, "Hand Orientation", 2, xtreme_app_scene_misc_screen_hand_orient_changed, app);
     bool value = furi_hal_rtc_is_flag_set(FuriHalRtcFlagHandOrient);
     variable_item_set_current_value_index(item, value);
-    variable_item_set_current_value_text(item, value ? "ON" : "OFF");
+    variable_item_set_current_value_text(item, value ? "Lefty" : "Righty");
 
     item = variable_item_list_add(var_item_list, "RGB Backlight", 1, NULL, app);
     variable_item_set_current_value_text(item, xtreme_settings->rgb_backlight ? "ON" : "OFF");

@@ -25,14 +25,14 @@ void power_settings_scene_start_on_enter(void* context) {
         app);
     submenu_add_item(
         submenu,
-        "Reboot",
-        PowerSettingsSubmenuIndexReboot,
+        "Power Off",
+        PowerSettingsSubmenuIndexOff,
         power_settings_scene_start_submenu_callback,
         app);
     submenu_add_item(
         submenu,
-        "Power Off",
-        PowerSettingsSubmenuIndexOff,
+        "Reboot",
+        PowerSettingsSubmenuIndexReboot,
         power_settings_scene_start_submenu_callback,
         app);
     submenu_add_item(

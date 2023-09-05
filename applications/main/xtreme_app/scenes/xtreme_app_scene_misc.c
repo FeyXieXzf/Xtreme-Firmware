@@ -3,7 +3,6 @@
 enum VarItemListIndex {
     VarItemListIndexScreen,
     VarItemListIndexDolphin,
-    //VarItemListIndexChangeDeviceName,
     VarItemListIndexChargeCap,
     VarItemListIndexShowXtremeIntro,
 };
@@ -36,8 +35,6 @@ void xtreme_app_scene_misc_on_enter(void* context) {
 
     item = variable_item_list_add(var_item_list, "Dolphin", 0, NULL, app);
     variable_item_set_current_value_text(item, ">");
-
-    //variable_item_list_add(var_item_list, "Change Device Name", 0, NULL, app);
 
     char cap_str[6];
     value_index = xtreme_settings->charge_cap / CHARGE_CAP_INTV;
@@ -78,10 +75,6 @@ bool xtreme_app_scene_misc_on_event(void* context, SceneManagerEvent event) {
             scene_manager_set_scene_state(app->scene_manager, XtremeAppSceneMiscDolphin, 0);
             scene_manager_next_scene(app->scene_manager, XtremeAppSceneMiscDolphin);
             break;
-        // case VarItemListIndexChangeDeviceName:
-        //     scene_manager_set_scene_state(app->scene_manager, XtremeAppSceneMiscRename, 0);
-        //     scene_manager_next_scene(app->scene_manager, XtremeAppSceneMiscRename);
-        //     break;
         case VarItemListIndexShowXtremeIntro: {
             for(int i = 0; i < 10; i++) {
                 if(storage_common_copy(

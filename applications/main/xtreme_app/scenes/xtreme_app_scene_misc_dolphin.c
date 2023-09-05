@@ -32,15 +32,15 @@ static void xtreme_app_scene_misc_dolphin_dolphin_angry_changed(VariableItem* it
 
 const char* const butthurt_timer_names[] = {
     "OFF",
-    "30 M",
-    "1 H",
-    "2 H",
-    "4 H",
-    "6 H",
-    "8 H",
-    "12 H",
-    "24 H",
-    "48 H",
+    "30min",
+    "1h",
+    "2h",
+    "4h",
+    "6h",
+    "8h",
+    "12h",
+    "24h",
+    "48h",
 };
 const uint32_t butthurt_timer_values[COUNT_OF(butthurt_timer_names)] = {
     0,
