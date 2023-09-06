@@ -20,7 +20,7 @@ void nfc_scene_mf_ultralight_emulate_on_enter(void* context) {
     bool is_ultralight = (type == MfUltralightTypeUL11) || (type == MfUltralightTypeUL21) ||
                          (type == MfUltralightTypeUnknown);
     Popup* popup = nfc->popup;
-    popup_set_header(popup, "Emulating", 89, 30, AlignLeft, AlignTop);
+    popup_set_header(popup, "Emulating", 89, 30, AlignCenter, AlignTop);
     if(strcmp(nfc->dev->dev_name, "") != 0) {
         nfc_text_store_set(nfc, "%s", nfc->dev->dev_name);
     } else if(is_ultralight) {
@@ -29,7 +29,7 @@ void nfc_scene_mf_ultralight_emulate_on_enter(void* context) {
         nfc_text_store_set(nfc, "MIFARE\nNTAG");
     }
     popup_set_icon(popup, 0, 3, &I_NFC_dolphin_emulation_97x61);
-    popup_set_text(popup, nfc->text_store, 90, 28, AlignCenter, AlignTop);
+    popup_set_text(popup, nfc->text_store, 90, 32, AlignCenter, AlignTop);
 
     // Setup and start worker
     view_dispatcher_switch_to_view(nfc->view_dispatcher, NfcViewPopup);

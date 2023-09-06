@@ -5,7 +5,7 @@ void nfc_scene_rpc_on_enter(void* context) {
     Popup* popup = nfc->popup;
 
     popup_set_header(popup, "NFC", 89, 30, AlignCenter, AlignBottom);
-    popup_set_text(popup, "RPC Mode", 89, 32, AlignCenter, AlignTop);
+    popup_set_text(popup, "RPC Mode", 90, 32, AlignCenter, AlignTop);
 
     popup_set_icon(popup, 0, 3, &I_NFC_dolphin_emulation_97x61);
 
