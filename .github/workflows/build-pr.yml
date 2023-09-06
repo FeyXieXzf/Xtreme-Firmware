@@ -39,12 +39,12 @@ jobs:
         run: |
           git diff --exit-code
 
+      - name: "Make tgz, zip and sdk"
+        run: bash .github/workflow_data/package.sh
+
       - name: 'Upload artifacts'
         uses: actions/upload-artifact@v3
         with:
           name: tgz_package
           path: |
             ${{ env.ARTIFACT_TGZ }}
-          
-      - name: "Make tgz, zip and sdk"
-        run: bash .github/workflow_data/package.sh
