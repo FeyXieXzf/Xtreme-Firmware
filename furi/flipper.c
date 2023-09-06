@@ -101,7 +101,7 @@ static void flipper_boot_status(Canvas* canvas, const char* text) {
     canvas_reset(canvas);
     canvas_draw_str_aligned(canvas, 64, 40, AlignCenter, AlignCenter, text);
     canvas_set_font(canvas, FontPrimary);
-    canvas_draw_str_aligned(canvas, 64, 24, AlignCenter, AlignCenter, "Flipper Zero is Booting");
+    canvas_draw_str_aligned(canvas, 64, 24, AlignCenter, AlignCenter, "Flipper Zero Booting");
     canvas_commit(canvas);
 }
 
@@ -128,7 +128,7 @@ void flipper_init() {
         flipper_boot_status(canvas, "Loading System Assets");
         XTREME_ASSETS_LOAD();
     } else {
-        FURI_LOG_I(TAG, "Special boot - skipping optional components");
+        FURI_LOG_I(TAG, "Special Boot - skipping optional components");
     }
 
     // Everything else
