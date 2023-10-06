@@ -13,5 +13,5 @@ App(
     fap_icon_assets="icons",
     fap_author="@QtRoS",
     fap_version="1.1",
-    fap_description="App allows to view various files as HEX.",
+    fap_description="View various files as Hex.",
 )
