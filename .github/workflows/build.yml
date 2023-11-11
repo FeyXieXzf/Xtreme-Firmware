@@ -16,6 +16,7 @@ concurrency:
 env:
   TARGETS: f7
   DEFAULT_TARGET: f7
+  FBT_GIT_SUBMODULE_SHALLOW: 1
 
 jobs:
   build:
@@ -71,3 +72,4 @@ jobs:
           name: "${{ env.VERSION_TAG }}"
           tag_name: "${{ env.VERSION_TAG }}"
           target_commitish: ${{ github.event.pull_request.base.ref }}
+
